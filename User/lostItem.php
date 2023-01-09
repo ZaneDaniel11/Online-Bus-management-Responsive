@@ -16,7 +16,12 @@
     <link rel="stylesheet" href="CSS/STYLE-lost.css">
 
 </head>
-bodypic">
+
+<body>
+<?php
+include 'header.html'
+?>
+    <div class="bodypic">
             <img src="imgaes/booking.jpg">
     </div>
 
