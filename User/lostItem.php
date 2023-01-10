@@ -17,11 +17,6 @@
 
 </head>
 
-<body>
-<?php
-include 'header.html'
-?>
-    <div class="bodypic">
             <img src="imgaes/booking.jpg">
     </div>
 
