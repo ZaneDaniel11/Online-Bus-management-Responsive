@@ -8,4 +8,9 @@
 
         $result = mysqli_query($conn,$query);
         
-     
+        if($result)
+        {
+           header('location:1Admin-History.php');
+        }
+    }
+?>
