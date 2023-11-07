@@ -1,4 +1,21 @@
+<?php
+include 'Connection.php';
+$id = $_GET['updateid'];
+$sql = "SELECT *FROM main_tb WHERE id=$id";
+$result = mysqli_query($conn,$sql);
+$row = mysqli_fetch_assoc($result);
+$bus_no = $row['bus_no'];
+$route = $row['route_destination'];
+$unit = $row['unit'];
+$cor = $row['cor_number'];
+$passTicket = $row['pass_ticket'];
+$baggTicket = $row['bagg_ticket'];
+$passenger = $row['passenger'];
+$dName = $row['drivers_name'];
+$cName = $row['conductors_name'];
+$date = $row['date'];
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
