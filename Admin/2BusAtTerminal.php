@@ -58,3 +58,32 @@ include 'Connection.php';
 </form>
 </body>
 </html>
+
+
+<?php
+if(isset($_POST['submit']))
+{
+  $bus_no = $_POST['bus_no'];
+  $route =$_POST['route'];
+  $unit =$_POST['unit'];
+  $cor=$_POST['cor'];
+  $dName =$_POST['dName'];
+  $cName =$_POST['cName'];
+  $time =$_POST['time'];
+
+  $query = "INSERT INTO bus_stamby (bus_no,route_destination,unit,cor_number,drivers_name,conductors_name,departure_time) VALUES ('$bus_no', '$route', '$unit', '$cor', '$dName', '$cName' ,'$time')";
+
+  $result = mysqli_query($conn,$query);
+
+  if($result)
+  {
+     header('Location:2Admin-BusAtTerminal.php');
+  }
+  else
+  {
+    echo 'woow';
+  }
+
+ 
+}
+?>
