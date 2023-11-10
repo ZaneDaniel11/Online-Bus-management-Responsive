@@ -1,18 +1,4 @@
-<?php
-include 'Connection.php';
-$id = $_GET['updateid'];
-$sql = "SELECT *FROM bus_stamby WHERE id='$id'";
-$add = mysqli_query($conn,$sql);
-$row = mysqli_fetch_assoc($add);
 
-$bus_no = $row['bus_no'];
-$route = $row['route_destination'];
-$unit = $row['unit'];
-$cor = $row['cor_number'];
-$dName = $row['drivers_name'];
-$cName = $row['conductors_name'];
-$time = $row['departure_time'];
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
