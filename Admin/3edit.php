@@ -72,7 +72,8 @@ $time = $row['departure_time'];
 </body>
 </html>
 <?php
-
+    include 'Connection.php';
+    
     if(isset($_POST['submit']))
     {
         $bus_no = $_POST['bus_no'];
