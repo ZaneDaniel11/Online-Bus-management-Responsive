@@ -1,3 +1,10 @@
+<?php
+include 'Connection.php';
+
+if (isset($_GET['releaseid'])) {
+    $id = $_GET['releaseid'];
+    $sql = "SELECT * FROM management_tb WHERE id = $id";
+    $result = mysqli_query($conn, $sql);
 
     if ($result && $row = mysqli_fetch_assoc($result)) {
         $bus_no = $row['bus_no'];
