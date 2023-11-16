@@ -1,7 +1,4 @@
-<?php
-    include("sidevar.html");
-    include 'Connection.php';
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
