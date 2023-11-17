@@ -9,4 +9,14 @@
 
     $result = mysqli_query($conn,$deleteSql);
 
-   
+    if($result)
+    {
+        header('location:5Admin-addItem.php');
+    }
+    else
+    {
+        echo 'Delete Unsucesfull';
+    }
+
+ }
+?>
