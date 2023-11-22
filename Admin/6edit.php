@@ -1,5 +1,5 @@
 <?php
- 
+    include 'Connection.php';
 
     $id = $_GET['editid'];
 
