@@ -1,4 +1,19 @@
+<?php
+ 
 
+    $id = $_GET['editid'];
+
+    $sql = "SELECT *FROM arrival_tb";
+    $result = mysqli_query($conn,$sql);
+    $row = mysqli_fetch_assoc($result);
+
+    $bus_no = $row['bus_no'];
+    $unit = $row['unit'];
+    $departure_time = $row['departured_time'];
+    $route = $row['route_destination'];
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
