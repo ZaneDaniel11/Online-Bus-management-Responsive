@@ -1,4 +1,10 @@
-
+body
+{
+    
+    overflow-x: hidden;
+    position: relative;
+    
+}
 .containerForm
 {   margin-top: 100px;
     margin-left: 400px;
