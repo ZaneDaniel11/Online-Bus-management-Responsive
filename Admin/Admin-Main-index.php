@@ -1,3 +1,6 @@
+<?php
+    include("sidevar.html");
+?>
 
 <!DOCTYPE html>
 <html lang="en">
