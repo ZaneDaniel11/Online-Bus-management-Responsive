@@ -12,7 +12,10 @@ form {
   
 }
 
-
+label {
+    display: block;
+    margin-bottom: 8px;
+}
 
 input, select {
     width: 100%;
