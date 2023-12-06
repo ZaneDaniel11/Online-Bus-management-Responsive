@@ -7,17 +7,18 @@
         }
 
         .claim-status-claim {
-            background-color: green;
-            color: white;
+          
+            color: green;
             font-family: 'Roboto';
             border-radius: 10px;
             align-items: center;
             text-align: center;
+            font-size: bold;
         }
 
         .claim-status-unclaim {
-            background-color: red;
-            color: white;
+            
+            color: red;
             border-radius: 10px;
             text-align: center;
         }

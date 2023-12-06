@@ -116,7 +116,7 @@
         <p class="p3">Live Bus Travel Information</p>
     </div>
 
-    <div class="tablecontianer">
+<div class="tablecontianer">
 
         
         <div class="tableButtonContainer">
@@ -141,10 +141,55 @@
         <div class="loadToggleContainer">
            <div><button id="showMoreBtn">Show More</button></div>
         </div>
-    </div>
+ </div>
+
+ <div class="announcement-Container">
+    <p>Announcement</p>
+
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    dw
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+
+                $sql = "SELECT *FROM announce_tb";
+
+                $result = mysqli_query($conn,$sql);
+
+                if($result)
+                {
+                    while($row=mysqli_fetch_assoc($result))
+                    {
+                        $announcement = $row['about'];
+                        $info = $row['info'];
+                        $date = $row['date'];
+
+                        echo ' 
+                    <tr>
+                        <td>'.$announcement.'</td>
+                        <td>'.$info.'</td>
+                        <td>'.$date.'</td>
+                    </tr>
+                        ';
+                    }
+                }
+            
+            ?>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+ </div>
 
 
-    </div>
 
     
 </body>

@@ -95,6 +95,8 @@ background: #C72A25;
 .LostBtn
 {
     position: absolute;
-    left: 0px;
-    background-color: red;
+    right: 0px;
+    background-color: black;
+    border-style: none;
+    color: white;
 }

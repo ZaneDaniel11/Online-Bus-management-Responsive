@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="CSS/STYLE-lost.css">
 
 </head>
+
+<body>
 <?php
 include 'header.html'
 ?>
-<body>
     <div class="bodypic">
             <img src="imgaes/booking.jpg">
-          <button class="LostBtn">Lost a item</button>
     </div>
 
     <div class="section2">
