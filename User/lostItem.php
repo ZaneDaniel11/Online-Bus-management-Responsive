@@ -36,38 +36,37 @@ include 'header.html'
         ?>
     </div>
     
-
-</body>
-</html>
-
 <script> 
-<?php
-    include 'Table/Connection.php';
+    <?php
+        include 'Table/Connection.php';
 
-    if(isset($_POST['submit']))
-    {
-        $email = $_POST['email'];
-        $unit = $_POST['unit'];
-        $route = $_POST['route'];
-
-        $query = "INSERT INTO book_tb (email,unit,route_destination) VALUES ('$email','$unit','$route')";
-
-        $result = mysqli_query($conn,$query);
-
-        if($result)
+        if(isset($_POST['submit']))
         {
-            echo ' 
-            $(document).ready(function(){
-                $("#bookingSuccessModal").modal("show");
-            });
-        ';
+            $email = $_POST['email'];
+            $unit = $_POST['unit'];
+            $route = $_POST['route'];
+
+            $query = "INSERT INTO book_tb (email,unit,route_destination) VALUES ('$email','$unit','$route')";
+
+            $result = mysqli_query($conn,$query);
+
+            if($result)
+            {
+                echo ' 
+                $(document).ready(function(){
+                    $("#bookingSuccessModal").modal("show");
+                });
+            ';
+            }
+            else
+            {
+                echo 'idiot';
+            }
         }
-        else
-        {
-            echo 'idiot';
-        }
-    }
-?>
+    ?>
 
 
 </script>
+</body>
+</html>
+

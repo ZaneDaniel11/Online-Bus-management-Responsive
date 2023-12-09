@@ -74,7 +74,8 @@ p
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:40px
+    padding:40px;
+    padding-top: 20px;
 }
 
 .tableButtonContainer button
@@ -83,8 +84,8 @@ p
     height: 87px;
     flex-shrink: 0;
     border-radius: 20px;
-    background: #FFF;
-    color: #000;
+    background: red;
+    color: red;
     font-family: Roboto;
     font-size: 24px;
     font-style: normal;
@@ -97,7 +98,7 @@ p
     height: 87px;
     flex-shrink: 0;
     border-radius: 20px;
-    background: #666;
+    background: red;
     color: #FFF;
     font-size: 24px;
     font-style: normal;

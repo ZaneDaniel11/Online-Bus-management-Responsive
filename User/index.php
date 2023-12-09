@@ -108,8 +108,8 @@
     </div>
 
     <div class="section2">
-        <p class="p1">SCHEDULE</p>
-        <p class="p2">Stay inform with  bus schedule with real-time updates.</p>
+        <p class="p1"style="color: blue;">SCHEDULE</p>
+        <p class="p2"style="color: pink;" >Stay inform with  bus schedule with real-time updates.</p>
     </div>
 
     <div class="section3">
@@ -118,18 +118,25 @@
 
 <div class="tablecontianer">
 
+
+                                <!-- BUTTONS -->
         
         <div class="tableButtonContainer">
             <div class="stambyButtonContainer">
-                <button id="stambyBtn" class="stambyBtn">BUS STAMBY</button>
+                <button id="stambyBtn" class="stambyBtn" style="background-color: blue; color:red;" >BUS STAMBY</button>
             </div>
 
             <div class="arrivalButtonContainer">
-                <button class="arrivalBtn" id="arrivalBtn">ARRIVALS</button>
+                <button class="arrivalBtn" id="arrivalBtn"style="background-color: green; color:blue; ">ARRIVALS</button>
             </div>
 
             <div class="departureButtonContainer">
-                <button class="departureBtn" id="departureBtn">DEPARTURES</button>
+                <button class="departureBtn" id="departureBtn"style="background-color: black;color: red;0">DEPARTURES</button>
+            </div>
+
+            
+            <div class="departureButtonContainer">
+                <button class="departureBtn" id="departureBtn"style="background-color: black;color: red;0">DEPARTURES</button>
             </div>
         </div>
 
@@ -139,7 +146,7 @@
         ?>
     </div>
         <div class="loadToggleContainer">
-           <div><button id="showMoreBtn">Show More</button></div>
+           <div><button id="showMoreBtn"style="background-color: violet;">Show More</button></div>
         </div>
  </div>
 
@@ -189,9 +196,6 @@
     </table>
  </div>
 
-
-
-    
 </body>
 </html>
 

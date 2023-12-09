@@ -31,7 +31,7 @@
     </div>
     <div class="section2">
         <p class="p1">SCHEDULE</p>
-        <p class="p2">Stay inform with  bus schedule with real-time updates.</p>
+        <p class="p2" style="font-family: serif;">Stay inform with  bus schedule with real-time updates.</p>
     </div>
 
     <div class="section3">

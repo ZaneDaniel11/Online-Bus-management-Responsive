@@ -19,7 +19,7 @@
 <?php
 include 'header.html'
 ?>
-<body>
+<body style=background-color:red;>
     <div class="bodypic">
             <img src="imgaes/booking.jpg">
     </div>
@@ -29,8 +29,8 @@ include 'header.html'
         <p class="p2">Book now and stay inform from our update!</p>
     </div>
 
-    <body>
- <div class="bookingContainer">
+    
+ <div class="bookingContainer"style="background-color: green;">
 
         <form method="post">
             <label for="email">Email:</label>
@@ -49,7 +49,8 @@ include 'header.html'
                 <option value="daan bantayan">DAAN BANTAYAN</option>
             </select>
 
-            <button  type="submit" name="submit" class="submitBtn">Submit</button>
+            <!-- SUBMIT BUTTON HERE -->
+            <button  type="submit" name="submit" class="submitBtn"style="background-color: black">Submit</button>
         </form>
  </div>
     <!-- Bootstrap Modal -->
